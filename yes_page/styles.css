@@ -1,0 +1,122 @@
+/* Reset dasar */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fde2e4;
+    font-family: 'Arial', sans-serif;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Kontainer utama */
+.container {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Judul */
+h1 {
+    font-size: 1.8em;
+    color: #d32f2f;
+    margin-bottom: 15px;
+}
+
+/* Paragraf */
+p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Bagian tombol */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Tombol utama */
+.yes-button, .no-button {
+    font-size: 1.2em;
+    padding: 12px;
+    width: 100%;
+    max-width: 250px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Warna tombol */
+.yes-button {
+    background-color: #4caf50;
+    color: white;
+}
+
+.no-button {
+    background-color: #d32f2f;
+    color: white;
+}
+
+/* Hover efek */
+.yes-button:hover {
+    background-color: #388e3c;
+}
+
+.no-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Gambar */
+.gif_container {
+    margin-top: 15px;
+}
+
+.gif_container img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+/* Tombol Lanjut */
+.next-button {
+    font-size: 1.2em;
+    padding: 12px;
+    width: 100%;
+    max-width: 250px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #2196F3;
+    color: white;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.next-button:hover {
+    background-color: #1976D2;
+}
+
+
+/* Responsif untuk layar kecil */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .yes-button, .no-button {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .gif_container img {
+        max-width: 250px;
+    }
+}
